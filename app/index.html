@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Platinum — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="title-block">
+    <p class="eyebrow">Grand Theft Auto VI · PlayStation 5 · Offline guide</p>
+    <h1>Leonida Platinum</h1>
+    <p class="sub">Every one of the 55 official trophies — names, descriptions and grades as PlayStation publishes them — with a guide to each, a tracker that saves in your browser, a road to the platinum, and the missables flagged.</p>
+  </div>
+  <div class="progress-card" id="progress-card">
+    <p class="big-count"><span id="earned-count">0</span><span class="of"> / 55</span></p>
+    <div class="bar" role="progressbar" aria-label="Trophies earned" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0" id="progress-bar"><span id="progress-fill"></span></div>
+    <p class="progress-line" id="progress-text">0 of 55 earned · 0% to the platinum</p>
+    <p class="grade-line" id="grade-line">Platinum 0/1 · Gold 0/2 · Silver 0/6 · Bronze 0/46</p>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Guide sections">
+  <button type="button" class="tab active" id="tab-checklist" data-view="checklist">Checklist</button>
+  <button type="button" class="tab" id="tab-roadmap" data-view="roadmap">Roadmap to Platinum</button>
+  <button type="button" class="tab" id="tab-missables" data-view="missables">Missables</button>
+  <button type="button" class="tab" id="tab-about" data-view="about">About &amp; sources</button>
+</nav>
+
+<main>
+  <section id="view-checklist" class="view">
+    <div class="toolbar">
+      <label class="search-label">Search <input id="search" type="search" placeholder="Trophy name or description…" autocomplete="off"></label>
+      <div class="kinds" id="kinds" role="group" aria-label="Filter by kind">
+        <button type="button" class="kind active" data-kind="all">All 55</button>
+        <button type="button" class="kind" data-kind="story">Story</button>
+        <button type="button" class="kind" data-kind="missable">Missable</button>
+        <button type="button" class="kind" data-kind="collectibles">Collectibles</button>
+        <button type="button" class="kind" data-kind="activities">Activities</button>
+        <button type="button" class="kind" data-kind="online">Online</button>
+      </div>
+      <label class="select-label">Grade
+        <select id="grade-filter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="select-label">Status
+        <select id="status-filter">
+          <option value="all">All</option>
+          <option value="earned">Earned</option>
+          <option value="remaining">Not earned yet</option>
+        </select>
+      </label>
+      <label class="spoiler-label"><input type="checkbox" id="spoiler-toggle"> Hide story spoilers</label>
+      <div class="io">
+        <button type="button" id="export-btn">Export progress</button>
+        <label class="import-label">Import progress <input id="import-file" type="file" accept="application/json,.json"></label>
+        <button type="button" id="reset-btn">Reset</button>
+      </div>
+    </div>
+    <p class="list-meta" id="list-meta"></p>
+    <div class="split">
+      <ol class="trophy-list" id="trophy-list"></ol>
+      <aside class="detail" id="detail" aria-live="polite">
+        <p class="detail-empty">Pick a trophy to read its guide and sources.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section id="view-roadmap" class="view" hidden>
+    <h2>Roadmap to the platinum</h2>
+    <p class="lede">Built from the official descriptions only: finish the story, then the side strands, then activities and robberies, then collectibles and exploration — and 100% completion last. No trophy needs online play, and the game launched with no online mode, so the whole list is single-player. Early estimates put the full run at roughly 200 hours (PowerPyx) to 300+ hours (Push Square); both are guesses from launch week, not measured times.</p>
+    <div id="roadmap-stages"></div>
+  </section>
+
+  <section id="view-missables" class="view" hidden>
+    <h2>Missable trophies</h2>
+    <p class="lede">How this list is built: only one trophy is flagged missable by a published guide — PowerPyx, reported by GGRecon, says a first meditation in Chapter 1 can be missed. Everything else here is flagged from its official description alone, because it is tied to one named mission or one specific moment; no reliable missable list exists yet (the game launched 19 November 2026), and mission replay may recover some of them. The safe play is the same either way: keep a few manual saves before the big missions.</p>
+    <h3>Confirmed missable — do it early</h3>
+    <div id="missable-confirmed"></div>
+    <h3>One-moment trophies — keep a manual save</h3>
+    <div id="missable-watch"></div>
+  </section>
+
+  <section id="view-about" class="view" hidden>
+    <h2>About &amp; sources</h2>
+    <div class="about-grid">
+      <div>
+        <h3>Where the facts come from</h3>
+        <ul>
+          <li><strong>Official names, descriptions and grades</strong> — the PSN trophy list via <a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/" target="_blank" rel="noopener">Exophase</a>, cross-checked on <a href="https://psnprofiles.com/trophies/43531-grand-theft-auto-vi" target="_blank" rel="noopener">PSNProfiles</a>. The two agree on every name, description and grade. 55 trophies: 1 platinum, 2 gold, 6 silver, 46 bronze; 28 hidden on PlayStation until earned.</li>
+          <li><strong>Counts</strong> (250 stunts, 42 shooting-range challenges, 18 meditation spots, 52 areas and the rest) — PSN's progress targets via PSNProfiles.</li>
+          <li><strong>The one confirmed missable</strong> — PowerPyx's GTA 6 Trophy Guide, reported by GGRecon: a first meditation in Chapter 1 can be missed.</li>
+          <li><strong>Time estimates</strong> — PowerPyx (~200 hours) and Push Square (300+ hours), both early estimates.</li>
+          <li><strong>What 100% completion covers</strong> — GTA Culture's completion guide, via Heyday.</li>
+          <li><strong>No online trophies</strong> — Push Square and GTABase, via the Exophase list.</li>
+        </ul>
+        <h3>What this guide is honest about</h3>
+        <ul>
+          <li>Every guide is written in our own words for this entry. No guide text is copied from any other guide; the official names and descriptions are the exception, shown as PlayStation publishes them.</li>
+          <li>Where a guide says how to do something, it is our own advice from the official description — not yet verified in the game. Where a fact is not pinned down (the exact trigger of a vague trophy, the full missable list), the guide says so instead of guessing.</li>
+          <li>No Rockstar logo, artwork, box art or game screenshot is used anywhere in this guide. The look is our own.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>How to use it</h3>
+        <ul>
+          <li>Tick a trophy when you earn it — progress saves in this browser (localStorage) and survives reloads.</li>
+          <li><strong>Export progress</strong> downloads your ticks as a JSON file; <strong>Import progress</strong> reads one back.</li>
+          <li><strong>Hide story spoilers</strong> hides the names and descriptions of hidden story trophies until you earn them.</li>
+          <li>Filters: kind (story, missable, collectibles, activities, online), grade, earned or not, and search.</li>
+          <li>This app is static files and works with the network off. It fetches only its own files — the trophy list in <code>data/trophies.json</code> — and nothing else.</li>
+        </ul>
+        <h3>Cheats warning</h3>
+        <p>Turning on a cheat disables trophies, according to PowerPyx — and you cannot save once one is used, per GameSpot and PC Gamer. Do not use cheats on a platinum run.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Platinum — an unofficial fan guide. Grand Theft Auto and GTA are trademarks of Rockstar Games; this guide is not affiliated with or endorsed by Rockstar Games or Sony. Trophy names and descriptions are shown as PlayStation publishes them. Data: official PSN list via Exophase and PSNProfiles, 18 November 2026. Works offline.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
